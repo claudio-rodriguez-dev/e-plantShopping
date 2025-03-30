@@ -70,21 +70,22 @@ body {
     /* Adjust max-width for 3 cards per row with 20px gap */
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background: #fff;
+    transition: 0.4s ease;
+
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 30px;
     text-align: center;
     position: relative;
-
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     gap: 20px;
 }
 
 /* Pseudo-classes - Hover effect on product button */
 .product-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .product-title {
@@ -104,30 +105,16 @@ body {
     /* Adjust height for better consistency */
 }
 
-.product-button {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
-}
-
-.product-button:hover {
-    background-color: #c0392b;
-}
-
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
-    background-color: #e74c3c;
+    background-color: #e73c59;
     color: #fff;
     position: absolute;
     top: 0;
     right: 0;
     padding: 5px 10px;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 10px;
 }
 
 .tag_home_link {
@@ -236,6 +223,7 @@ body {
 /* ProductList.css */
 
 .product-button {
+    pointer-events: auto;
     background-color: #3fd3a2;
     /* Green */
     border: none;
@@ -246,13 +234,13 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.4s ease;
     cursor: pointer;
     border-radius: 25px;
 }
 
 .product-button:hover {
-    background-color: #169e70;
+    background-color: #e73c59;
 }
 
 .product-button.added-to-cart {
