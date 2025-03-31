@@ -184,12 +184,16 @@ body {
 }
 
 .cart_quantity_count {
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
+    background-color: #e73c59;
     position: absolute;
-    font-size: 29px;
-
+    text-align: center;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    font-size: 20px;
+    top: 15px;
+    right: 15px;
+    font-weight: lighter;
 }
 
 .plantname_heading {
